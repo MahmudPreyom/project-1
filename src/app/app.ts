@@ -43,7 +43,7 @@ const logger = (req: Request, res: Response, next: NextFunction) => {
 app.get('/', logger, async (req: Request, res: Response, next: NextFunction) => {
     // console.log(req.query);
     try {
-        res.send(something);
+        res.send("something");
     } catch (error) {
         // console.log(error);
         next(error)
